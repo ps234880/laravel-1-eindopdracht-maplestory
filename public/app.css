@@ -1,0 +1,47 @@
+@media only screen and (max-width: 825px) {
+
+    table, thead, tbody, th, td, tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    thead tr {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    td {
+        border-bottom: 1px solid lightgray;
+    }
+
+    /* Text before the td */
+    td:nth-of-type(1):before {
+        content: "ID";
+        color: gray;
+    }
+
+    td:nth-of-type(2):before {
+        content: "IN GAME NAME";
+        color: gray;
+    }
+
+    td:nth-of-type(3):before {
+        content: "CLASS";
+        color: gray;
+    }
+
+    td:nth-of-type(4):before {
+        content: "LEVEL";
+        color: gray;
+    }
+
+    td:nth-of-type(5):before {
+        content: "CREATED AT";
+        color: gray;
+    }
+
+    td:nth-of-type(6):before {
+        content: "UPDATED AT";
+        color: gray;
+    }
+}
